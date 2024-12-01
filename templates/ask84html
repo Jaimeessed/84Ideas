@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Ask84</h1>
+<p>Stel je vraag en ontvang een antwoord van onze AI!</p>
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Jouw vraag:</label>
+        <textarea name="user_input" class="form-control" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Verstuur</button>
+</form>
+{% if answer %}
+    <div class="mt-4">
+        <h5>Antwoord:</h5>
+        <p>{{ answer }}</p>
+    </div>
+{% endif %}
+{% endblock %}

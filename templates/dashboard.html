@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="my-4">Dashboard</h1>
+<p>Welkom op je dashboard! Hier kun je je persoonlijke gegevens en statistieken bekijken.</p>
+
+<!-- Voeg hier dashboardelementen toe -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Statistieken</h5>
+                <p class="card-text">Bekijk hier je belangrijkste cijfers.</p>
+                <a href="/kpis" class="btn btn-primary">Bekijk KPI's</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">VideoCalls</h5>
+                <p class="card-text">Plan hier een videogesprek.</p>
+                <a href="/videocall" class="btn btn-primary">Start een VideoCall</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
